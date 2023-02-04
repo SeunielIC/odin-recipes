@@ -17,8 +17,7 @@ function playRound(playerSelection, computerSelection) {
     
 }
    
-let playerSelection = prompt("Say something");
-const computerSelection = getComputerChoice();
+
 
 
 function getComputerChoice() {
@@ -29,6 +28,11 @@ function getComputerChoice() {
 
 function game() {
     for (let i = 0; i < 5; i++) {
-        console.log(playRound(playerSelection, computerSelection))
+        
+        let playerSelection = prompt("Say something");
+        const computerSelection = getComputerChoice();
+        console.log(playRound(playerSelection, computerSelection));
+
      }
 }
+game()
